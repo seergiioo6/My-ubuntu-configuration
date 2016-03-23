@@ -1,7 +1,5 @@
-my-ubuntu
+My Ubuntu Configuration
 =========
-
-My ubuntu configuration
 
 Basic Aplications
 ----
@@ -13,7 +11,12 @@ sudo apt-get install -y curl vim vim-gnome
 Git
 ----
 
-Reference: http://linuxg.net/how-to-install-git-1-8-4-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-elementary-os-0-2-and-pear-os-8/
+<pre>
+
+sudo apt-get update
+sudo apt-get install git	
+
+</pre>
 
 <pre>
 sudo add-apt-repository ppa:git-core/ppa
@@ -62,14 +65,27 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 </pre>
 
 Aliases:
-
+<pre>
 alias cl="clear"
 alias s="subl"
 export ANDROID_HOME="/opt/android-sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export PATH=$HOME/.node/bin:$PATH
+export PATH=$HOME/.node/bin:$PATH	
+</pre>
 
 
+Node JS
+----
+
+Install latest version of Nodejs from: https://nodejs.org/en/ 
+
+NPM
+----
+
+<pre>
+sudo apt-get install npm	
+
+</pre>
 
 RVM
 ---
@@ -105,18 +121,6 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:team-xbmc/ppa
 sudo apt-get update
 sudo apt-get install xbmc
-</pre>
-
-Docker
-------
-
-<pre>
-sudo apt-get update
-sudo apt-get install linux-image-extra-`uname -r`
-sudo sh -c "curl http://get.docker.io/gpg | apt-key add -"
-sudo sh -c "echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-sudo apt-get update
-sudo apt-get install lxc-docker
 </pre>
 
 Synapse

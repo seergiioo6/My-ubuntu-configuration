@@ -1,0 +1,2 @@
+DATE=`date +%d-%m-%y-%T`
+zenity --question --text "Do you want to Record a Screencast?" && ffmpeg -f x11grab -r 25 -s 1600x876 -i :0.0+0,24 -vcodec libx264 -vpre lossless_ultrafast -threads 0 ~/Videos/screencast-$DATE.mkv

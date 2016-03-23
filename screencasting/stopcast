@@ -1,0 +1,2 @@
+pkill ffmpeg && zenity --info --text "Screencast stopped"
+

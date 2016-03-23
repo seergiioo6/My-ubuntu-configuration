@@ -15,10 +15,6 @@ Git
 
 sudo apt-get update
 sudo apt-get install git	
-
-</pre>
-
-<pre>
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
@@ -162,7 +158,20 @@ sudo apt-get update
 sudo apt-get install sublime-text-installer
 </pre>
 Install Package Installer:
-import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+<pre>
+import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)	
+</pre>
+
+Plugins:
+<ul>
+	<li>Brogrammer Theme</li>
+	<li>HTML Beauty</li>
+	<li>SFTP</li>
+	<li>Babel</li>
+	<li>Normalize Identation</li>
+	<li>...</li>
+</ul>
+
 
 
 To create unity launcher create `/usr/share/applications/sublime.desktop`
@@ -297,12 +306,14 @@ cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | sed 1q
 Other Apps
 ----------
 
-* Install Skype
-* Install LastPass
+* Skype
+* GIMP
+* Filezilla
+* Emma
+* Team Speak 3 Client
+* Libre Office
+* Eclipse
 
-To be reviewed
-----
 
-http://www.webupd8.org/2013/10/8-things-to-do-after-installing-ubuntu.html
 
 
